@@ -17,6 +17,7 @@ Route::get('/posts', [PostController::class, 'index'])->name('post.index');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post.show');
 
 Route::get('/projects', [ProjectController::class, 'index'])->name('project.index');
-Route::get('/project/{slug}', [ProjectController::class, 'show'])->name('project.show');
+Route::get('/project/{project:slug}', [ProjectController::class, 'show'])->name('project.show');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

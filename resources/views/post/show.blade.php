@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="max-w-4xl mx-auto">
-        <div class="mb-8" style="opacity: 1; transform: none;"><a
+        <div class="mb-8"><a
                 class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 flex items-center"
                 href="/posts"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

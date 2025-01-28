@@ -2,17 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
     public function index()
     {
-        return view('project.index');
+        $projects = Project::latest()->paginate(6);
+        return view('project.index', compact('projects'));
     }
 
-    public function show($slug)
+    public function show($project)
     {
-        return view('project.show', ['slug' => $slug]);
+        $project = Project::where('slug', $project)->first();
+
+        if(!$project){
+            return redirect()->route('project.index');
+        }
+        
+        return view('project.show', ['project' => $project]);
     }
 }

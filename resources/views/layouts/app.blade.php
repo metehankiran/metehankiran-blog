@@ -4,80 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <meta name="description" content="Metehan Kıran - Personal Website">
+    <title>Metehan Kıran</title>
+    @vite(['resources/css/app.css'])
     <script>
-        // Dark mode başlangıç durumu kontrolü
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
         }
-
-        // Tailwind dark mode konfigürasyonu
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        dark: {
-                            100: '#1E293B',
-                            200: '#334155',
-                            300: '#475569',
-                            400: '#64748B',
-                            500: '#94A3B8'
-                        }
-                    }
-                }
-            }
-        }
     </script>
-    @yield('styles')
+    @stack('styles')
 </head>
 
-<body class="animated-gradient text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
-
-    @include('layouts.navbar')
+<body>
+    <div class="min-h-screen flex flex-col animated-gradient">
+        @include('layouts.navbar')
 
     <main class="flex-1 container mx-auto px-4 py-8">
         @yield('content')
     </main>
 
     @include('layouts.footer')
-    @yield('scripts')
 
+    </div>
+    @vite(['resources/js/app.js'])
+    @stack('scripts')
     <script>
-        // Mobil menü toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button')
         const mobileMenu = document.getElementById('mobile-menu')
 
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden')
+            document.body.style.overflow = ''
+        }
+
         if (mobileMenuButton && mobileMenu) {
             mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden')
+                if (!mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu()
+                    return
+                }
+
+                mobileMenu.classList.remove('hidden')
+                document.body.style.overflow = 'hidden'
             })
         }
 
-        // Dark mode fonksiyonları
-        function updateTheme() {
-            const isDark = localStorage.theme === 'dark' || 
-                (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-
-            document.documentElement.classList.toggle('dark', isDark)
-            
-            // Light/dark ikonlarını güncelle
-            const lightIcon = document.getElementById('theme-toggle-light-icon')
-            const darkIcon = document.getElementById('theme-toggle-dark-icon')
-            
-            if (lightIcon && darkIcon) {
-                if (isDark) {
-                    lightIcon.classList.remove('hidden')
-                    darkIcon.classList.add('hidden')
-                } else {
-                    lightIcon.classList.add('hidden')
-                    darkIcon.classList.remove('hidden')
-                }
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') &&
+                !mobileMenuButton.contains(event.target) &&
+                !mobileMenu.contains(event.target)) {
+                closeMobileMenu()
             }
+        })
+
+        function updateTheme() {
+            requestAnimationFrame(() => {
+                const isDark = localStorage.theme === 'dark' || 
+                    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+                document.documentElement.classList.toggle('dark', isDark)
+                
+                const lightIcons = document.querySelectorAll('.theme-toggle-light-icon')
+                const darkIcons = document.querySelectorAll('.theme-toggle-dark-icon')
+                
+                if (lightIcons && darkIcons) {
+                    lightIcons.forEach(icon => icon.classList.toggle('hidden', !isDark))
+                    darkIcons.forEach(icon => icon.classList.toggle('hidden', isDark))
+                }
+            })
         }
 
         function toggleTheme() {
@@ -89,19 +85,17 @@
             updateTheme()
         }
 
-        // Event listener'ları ekle
-        const themeToggleButton = document.getElementById('theme-toggle')
-        const mobileThemeToggleButton = document.getElementById('mobile-theme-toggle')
-
-        if (themeToggleButton) {
-            themeToggleButton.addEventListener('click', toggleTheme)
-        }
-        if (mobileThemeToggleButton) {
-            mobileThemeToggleButton.addEventListener('click', toggleTheme)
+        const themeToggleButtons = document.querySelectorAll('.theme-toggle')
+        
+        if (themeToggleButtons) {
+            themeToggleButtons.forEach(button => {
+                button.addEventListener('click', toggleTheme)
+            })
         }
 
-        // Sayfa yüklendiğinde tema durumunu güncelle
-        updateTheme()
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTheme()
+        })
     </script>
 </body>
 

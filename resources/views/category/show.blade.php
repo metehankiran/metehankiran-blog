@@ -10,7 +10,7 @@
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-8">
-                    <div class="space-y-4" style="opacity: 1; transform: none;">
+                    <div class="space-y-4">
                         <h1 class="text-4xl font-bold text-white">similique qui</h1>
                         <p class="text-lg text-white/90 max-w-3xl">Placeat quibusdam autem illum dolorum. Voluptatum neque
                             accusantium quo molestias et velit. Omnis ut consectetur iure qui ea molestiae odio.</p>
@@ -29,12 +29,12 @@
         </section>
         <section>
             <div class="space-y-8">
-                <div class="text-center space-y-4" style="opacity: 1; transform: none;">
+                <div class="text-center space-y-4">
                     <h2 class="text-3xl font-bold">Yazılar</h2>
                     <p class="text-muted-foreground max-w-2xl mx-auto">Bu kategorideki tüm yazılar</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div style="opacity: 1; transform: none;"><a
+                    <div><a
                             href="/post/ducimus-repellat-id-voluptatem-in-velit-possimus-eum">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/laudantium-tempora-qui-animi">
+                    <div><a href="/post/laudantium-tempora-qui-animi">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">
@@ -134,7 +134,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a
+                    <div><a
                             href="/post/dolorem-ad-at-doloribus-occaecati-possimus-sunt">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/beatae-fuga-nesciunt-consequatur-molestiae">
+                    <div><a href="/post/beatae-fuga-nesciunt-consequatur-molestiae">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">
@@ -236,7 +236,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a
+                    <div><a
                             href="/post/dolorem-esse-dolores-et-eos-dolorem-ratione-corporis-quasi">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -288,7 +288,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/amet-sed-veritatis-nostrum-quia-ratione">
+                    <div><a href="/post/amet-sed-veritatis-nostrum-quia-ratione">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">
@@ -338,7 +338,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a
+                    <div><a
                             href="/post/ipsam-ratione-corrupti-provident-inventore-quasi-natus-ut">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -390,7 +390,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a
+                    <div><a
                             href="/post/excepturi-qui-eos-sed-dolorem-velit-ullam-enim-vel">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -441,7 +441,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/est-debitis-accusantium-itaque-sunt">
+                    <div><a href="/post/est-debitis-accusantium-itaque-sunt">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">
@@ -492,7 +492,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/est-occaecati-explicabo-dolores-aut">
+                    <div><a href="/post/est-occaecati-explicabo-dolores-aut">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">
@@ -541,7 +541,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/labore-fugiat-sequi-vero-omnis">
+                    <div><a href="/post/labore-fugiat-sequi-vero-omnis">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">
@@ -590,7 +590,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div style="opacity: 1; transform: none;"><a href="/post/rerum-minus-aut-in-voluptates">
+                    <div><a href="/post/rerum-minus-aut-in-voluptates">
                             <div
                                 class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                                 <div class="h-48">

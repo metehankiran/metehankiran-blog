@@ -2,16 +2,16 @@
 
 @section('content')
     <article class="max-w-4xl mx-auto space-y-8">
-        <div style="opacity: 1; transform: none;">
+        <div>
             <div class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden">
                 <div
                     class="w-full h-[400px] bg-slate-100 flex items-center justify-center p-4 transition-colors duration-200">
-                    <p class="text-slate-600 text-center font-medium line-clamp-3 text-2xl">odio temporibus nostrum</p>
+                    <p class="text-slate-600 text-center font-medium line-clamp-3 text-2xl">{{ $project->title }}</p>
                 </div>
             </div>
         </div>
-        <div class="space-y-6" style="opacity: 1; transform: none;">
-            <h1 class="text-4xl font-bold">odio temporibus nostrum</h1>
+        <div class="space-y-6">
+            <h1 class="text-4xl font-bold">{{ $project->title }}</h1>
             <div class="flex flex-wrap gap-4 text-sm text-muted-foreground">
                 <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -20,7 +20,7 @@
                         <path d="M16 2v4"></path>
                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                         <path d="M3 10h18"></path>
-                    </svg><time datetime="2025-01-20T13:05:52.000000Z">20 Ocak 2025</time></div>
+                    </svg><time datetime="2025-01-20T13:05:52.000000Z">{{ $project->created_at->format('d F Y') }}</time></div>
                 <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-eye h-4 w-4">
@@ -28,7 +28,7 @@
                             d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
                         </path>
                         <circle cx="12" cy="12" r="3"></circle>
-                    </svg><span>319 görüntülenme</span></div>
+                    </svg><span>{{ $project->views }} görüntülenme</span></div>
             </div>
             <div class="flex flex-wrap gap-2">
                 <div

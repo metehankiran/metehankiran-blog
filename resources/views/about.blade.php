@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="max-w-4xl mx-auto space-y-8">
-        <div class="text-center space-y-4" style="opacity: 1; transform: none;"><img
+        <div class="text-center space-y-4"><img
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&amp;w=2080" alt="Profile"
                 class="w-32 h-32 rounded-full mx-auto object-cover">
             <h1 class="text-4xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">John Doe
             </h1>
             <p class="text-xl text-muted-foreground">Full Stack Developer &amp; Designer</p>
         </div>
-        <div style="opacity: 1; transform: none;">
+        <div>
             <div class="rounded-xl border bg-card text-card-foreground shadow p-6">
                 <h2 class="text-2xl font-semibold mb-4">About Me</h2>
                 <p class="text-muted-foreground">I'm a passionate developer with over 5 years of experience in web
@@ -18,7 +18,7 @@
                     to open-source projects.</p>
             </div>
         </div>
-        <div class="grid gap-6 md:grid-cols-3" style="opacity: 1; transform: none;">
+        <div class="grid gap-6 md:grid-cols-3">
             <div class="rounded-xl border bg-card text-card-foreground shadow p-6 text-center"><svg
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -56,7 +56,7 @@
                 <p class="text-sm text-muted-foreground">English, Turkish</p>
             </div>
         </div>
-        <div class="flex justify-center space-x-4" style="opacity: 1; transform: none;"><button
+        <div class="flex justify-center space-x-4"><button
                 class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9"><svg
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

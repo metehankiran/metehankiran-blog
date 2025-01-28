@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="space-y-8">
-        <div class="text-center space-y-4" style="opacity: 1; transform: none;">
-            <h1 class="text-4xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Blog
+        <div class="text-center space-y-4">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent leading-loose">Blog
                 Yazıları</h1>
             <p class="text-muted-foreground max-w-2xl mx-auto">Yazılım, teknoloji ve güncel konular hakkında yazılar.</p>
         </div>
@@ -17,7 +17,7 @@
                 class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 pl-9"
                 placeholder="Yazılarda ara..." value=""></div>
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div style="opacity: 1; transform: none;"><a
+            <div><a
                     href="/post/architecto-nulla-sed-assumenda-fugiat-architecto-enim-eius-eaque">
                     <div
                         class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity: 1; transform: none;"><a
+            <div><a
                     href="/post/molestias-et-distinctio-voluptas-explicabo-voluptate-vel">
                     <div
                         class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity: 1; transform: none;"><a
+            <div><a
                     href="/post/dolores-qui-dignissimos-minus-nihil-neque-ab-quas-dignissimos">
                     <div
                         class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity: 1; transform: none;"><a href="/post/et-aliquam-rerum-id-dicta-non">
+            <div><a href="/post/et-aliquam-rerum-id-dicta-non">
                     <div
                         class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                         <div class="h-48">
@@ -218,7 +218,7 @@
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity: 1; transform: none;"><a href="/post/quam-magnam-ut-voluptatem-sint">
+            <div><a href="/post/quam-magnam-ut-voluptatem-sint">
                     <div
                         class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                         <div class="h-48">
@@ -267,7 +267,7 @@
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity: 1; transform: none;"><a href="/post/ipsa-dolor-qui-quaerat-quam-et">
+            <div><a href="/post/ipsa-dolor-qui-quaerat-quam-et">
                     <div
                         class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden h-[450px] flex flex-col hover:shadow-lg transition-shadow">
                         <div class="h-48">

@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="space-y-8">
-        <div class="text-center space-y-4" style="opacity: 1; transform: none;">
-            <h1 class="text-4xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+        <div class="text-center space-y-4">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent leading-loose">
                 Kategoriler</h1>
             <p class="text-muted-foreground max-w-2xl mx-auto">Tüm blog yazılarımın kategorilere göre listesi</p>
         </div>
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -203,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -253,7 +253,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -302,7 +302,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
@@ -351,7 +351,7 @@
                     </div>
                 </div>
             </div>
-            <div style="opacity: 1; transform: none;">
+            <div>
                 <div
                     class="rounded-xl border bg-card text-card-foreground shadow overflow-hidden group h-[300px] flex flex-col">
                     <div
